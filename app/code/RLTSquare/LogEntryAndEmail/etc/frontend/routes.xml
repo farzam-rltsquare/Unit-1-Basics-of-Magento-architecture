@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © RLTSquare. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="rltsquare_logentryandemail" frontName="rltsquare_logentryandemail">
+            <module name="RLTSquare_LogEntryAndEmail" />
+        </route>
+    </router>
+</config>

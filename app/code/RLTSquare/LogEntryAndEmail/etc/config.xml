@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © RLTSquare. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <email_settings>
+            <basic_configrations>
+                <enable>1</enable>
+                <receiver_email>farzam.moeen@rltsquare.com</receiver_email>
+                <sender_name>Magento</sender_name>
+                <sender_email>farzam.moeen@rltsquare.com</sender_email>
+                <template>email_settings_basic_configrations_template</template>
+            </basic_configrations>
+        </email_settings>
+    </default>
+</config>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © RLTSquare. All rights reserved.
+ */
+-->
+<config 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="email_settings_basic_configrations_template"
+              label="RLTSquare Log Entry Email"
+              file="logentryemail.html"
+              type="html"
+              module="RLTSquare_LogEntryAndEmail"
+              area="frontend"
+    />
+</config>

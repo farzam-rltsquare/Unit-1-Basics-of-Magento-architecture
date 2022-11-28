@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © RLTSquare. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="rltsquare" translate="label" sortOrder="10">
+            <label>RLTSqare</label>
+        </tab>
+        <section id="email_settings" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Email Settings</label>
+            <tab>rltsquare</tab>
+            <resource>RLTSquare_LogEntryAndEmail::rltsquare_config</resource>
+            <group id="basic_configrations" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Basic Configuration</label>
+                <field id="sender_name" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Sender Name</label>
+                    <comment>This is the name which will show in subject.</comment>
+                </field>
+                <field id="sender_email" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Sender Email</label>
+                    <comment>This is the address which will send the email.</comment>
+                </field>
+                <field id="receiver_email" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Receiver Email</label>
+                    <comment>This is the address which will receive the email.</comment>
+                </field>
+                <field id="template" translate="label comment" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Email Template</label>
+                    <comment>Email template used for sending mail on page visited.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
